@@ -1,5 +1,5 @@
 # LIBRARIES
-from src.RebalancingManager import RebalancingManager
+#from src.RebalancingManager import RebalancingManager
 import simpy
 import numpy as np
 import pandas as pd
@@ -37,7 +37,7 @@ class SimulationEngine:
         else:
             self.graph = graph
         self.ui = DataInterface(self.env, self.graph, self.config)
-        self.rebalancer = RebalancingManager(self.env, self.config, self.graph, self.ui)
+        # self.rebalancer = RebalancingManager(self.env, self.config, self.graph, self.ui)
         self.results = Results(self.config)
 
         self.stations = []
